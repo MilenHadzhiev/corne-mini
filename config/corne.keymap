@@ -15,209 +15,11 @@
         compatible = "zmk,combos";
 
         // Key Positions for the first row: 1, 2, 3, 4, 5, 7, 8, 9, 10, 11
-
-        combo_dtap_q {
-            key-positions = <1>;
-            layers = <0>;
-            bindings = <&kp N1>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_w {
-            key-positions = <2>;
-            layers = <0>;
-            bindings = <&kp N2>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_e {
-            key-positions = <3>;
-            layers = <0>;
-            bindings = <&kp N3>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_r {
-            key-positions = <4>;
-            layers = <0>;
-            bindings = <&kp N4>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_t {
-            key-positions = <5>;
-            layers = <0>;
-            bindings = <&kp N5>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_y {
-            key-positions = <6>;
-            layers = <0>;
-            bindings = <&kp N6>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_u {
-            key-positions = <7>;
-            layers = <0>;
-            bindings = <&kp N7>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_i {
-            key-positions = <8>;
-            layers = <0>;
-            bindings = <&kp N8>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_o {
-            key-positions = <9>;
-            layers = <0>;
-            bindings = <&kp N9>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_p {
-            key-positions = <10>;
-            layers = <0>;
-            bindings = <&kp N0>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_lbracket {
-            key-positions = <30>;
-            layers = <0>;
-            bindings = <&kp LBKT>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_rbracket {
-            key-positions = <31>;
-            layers = <0>;
-            bindings = <&kp RBKT>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_colon {
-            key-positions = <22>;
-            layers = <0>;
-            bindings = <&kp COLON>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_lthan {
-            key-positions = <32>;
-            layers = <0>;
-            bindings = <&kp LESS_THAN>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_mthan {
-            key-positions = <33>;
-            layers = <0>;
-            bindings = <&kp GREATER_THAN>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_qmark {
-            key-positions = <34>;
-            layers = <0>;
-            bindings = <&kp QMARK>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_lpar {
-            bindings = <&kp LPAR>;
-            key-positions = <18>;
-            layers = <0>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_rpar {
-            bindings = <&kp RPAR>;
-            key-positions = <19>;
-            layers = <0>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_lbrace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <28>;
-            layers = <0>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_rbrace {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <29>;
-            layers = <0>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <17>;
-            layers = <0>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_minus {
-            bindings = <&kp MINUS>;
-            key-positions = <25>;
-            layers = <0>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_dquotes {
-            bindings = <&kp DQT>;
-            key-positions = <20>;
-            layers = <0>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_squote {
-            bindings = <&kp SQT>;
-            key-positions = <21>;
-            layers = <0>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_opslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <26>;
-            layers = <0>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <27>;
-            layers = <0>;
-            timeout-ms = <TIMEOUT>;
-        };
-
-        combo_dtap_plus {
-            bindings = <&kp PLUS>;
-            key-positions = <16>;
-            layers = <0>;
-            timeout-ms = <TIMEOUT>;
-        };
-    };
-
+/*
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // | NA |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | NA |
-            // | NA |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | NA |
-            // | NA |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | NA |
-            //              | layer 1 | GUI | SPC |   | ENT | BSPC | layer 2 |
-            //  Double Tap: first row -> 1,2,...9,0
-            //              ; -> :
-
             bindings = <
 &trans  &kp Q  &kp W       &kp E         &kp R       &kp T        &kp Y    &kp U     &kp I         &kp O    &kp P     &trans
 &trans  &kp A  &mt LGUI S  &mt LSHIFT D  &mt LALT F  &kp G        &kp H    &kp J     &kp RSHIFT K  &kp L    &kp SEMI  &trans
@@ -227,12 +29,6 @@
         };
 
         lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
 &trans  &kp N1     &kp N2         &kp N3     &kp N4        &kp N5            &kp N6            &kp N7             &kp N8    &kp N9             &kp N0   &kp BSPC
 &trans  &kp TILDE  &kp LCMD       &kp LSHFT  &kp LEFT_ALT  &kp TAB           &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &kp DOUBLE_QUOTES  &kp SQT  &trans
@@ -242,12 +38,6 @@
         };
 
         raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
 &trans  &kp F1        &kp F2         &kp F3        &kp F4        &kp F5          &kp F6      &kp F7         &kp F8    &kp F9     &kp F10  &trans
 &trans  &bt BT_CLR    &kp LEFT_META  &kp LSHIFT    &kp LALT      &trans          &kp F11     &kp F12        &kp UP    &trans     &trans   &trans
