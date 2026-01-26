@@ -11,11 +11,185 @@
 #define TIMEOUT 200
 
 / {
-    combos {
-        compatible = "zmk,combos";
+    behaviors {
+        // Number row tap-dance behaviors
+        td_q: td_q {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp Q>, <&kp N1>;
+        };
+        
+        td_w: td_w {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp W>, <&kp N2>;
+        };
+        
+        td_e: td_e {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp E>, <&kp N3>;
+        };
+        
+        td_r: td_r {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp R>, <&kp N4>;
+        };
+        
+        td_t: td_t {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp T>, <&kp N5>;
+        };
+        
+        td_y: td_y {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp Y>, <&kp N6>;
+        };
+        
+        td_u: td_u {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp U>, <&kp N7>;
+        };
+        
+        td_i: td_i {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp I>, <&kp N8>;
+        };
+        
+        td_o: td_o {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp O>, <&kp N9>;
+        };
+        
+        td_p: td_p {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp P>, <&kp N0>;
+        };
+        
+        // Symbol tap-dance behaviors
+        td_semi: td_semi {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp SEMI>, <&kp COLON>;
+        };
+        
+        td_comma: td_comma {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp COMMA>, <&kp LESS_THAN>;
+        };
+        
+        td_dot: td_dot {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp DOT>, <&kp GREATER_THAN>;
+        };
+        
+        td_fslh: td_fslh {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp FSLH>, <&kp QMARK>;
+        };
+        
+        td_lbracket: td_lbracket {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp LBKT>, <&kp LPAR>;
+        };
+        
+        td_rbracket: td_rbracket {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp RBKT>, <&kp RPAR>;
+        };
+        
+        td_lbrace: td_lbrace {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp LEFT_BRACE>, <&kp LEFT_BRACE>;
+        };
+        
+        td_rbrace: td_rbrace {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp RIGHT_BRACE>, <&kp RIGHT_BRACE>;
+        };
+        
+        td_equal: td_equal {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
+        };
+        
+        td_minus: td_minus {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp MINUS>, <&kp UNDERSCORE>;
+        };
+        
+        td_dquotes: td_dquotes {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp DQT>, <&kp SQT>;
+        };
+        
+        td_squote: td_squote {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp SQT>, <&kp DQT>;
+        };
+        
+        td_backslash: td_backslash {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp BACKSLASH>, <&kp PIPE>;
+        };
+        
+        td_pipe: td_pipe {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp PIPE>, <&kp BACKSLASH>;
+        };
+        
+        td_plus: td_plus {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TIMEOUT>;
+            bindings = <&kp PLUS>, <&kp EQUAL>;
+        };
+    };
 
-        // Key Positions for the first row: 1, 2, 3, 4, 5, 7, 8, 9, 10, 11
-/*
     keymap {
         compatible = "zmk,keymap";
 
