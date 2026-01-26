@@ -25,13 +25,12 @@
         combo_dtap_i { key-positions = <9>;  layers = <0>; bindings = <&kp N8>; timeout-ms = <TIMEOUT>; };
         combo_dtap_o { key-positions = <10>; layers = <0>; bindings = <&kp N9>; timeout-ms = <TIMEOUT>; };
         combo_dtap_p { key-positions = <11>; layers = <0>; bindings = <&kp N0>; timeout-ms = <TIMEOUT>; };
-        // Bonus: Double-tap SEMI (;) for COLON (:)
-        combo_dtap_semi { key-positions = <21>; layers = <0>; bindings = <&kp LBKT>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_semi { key-positions = <22>; layers = <0>; bindings = <&kp RBKT>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_semi { key-positions = <23>; layers = <0>; bindings = <&kp COLON>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_semi { key-positions = <24>; layers = <0>; bindings = <&kp LESS_THAN>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_semi { key-positions = <25>; layers = <0>; bindings = <&kp GREATER_THAN>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_semi { key-positions = <26>; layers = <0>; bindings = <&kp QMARK>; timeout-ms = <TIMEOUT>; };
+        combo_dtap_lbracket { key-positions = <21>; layers = <0>; bindings = <&kp LBKT>; timeout-ms = <TIMEOUT>; };
+        combo_dtap_rbracket { key-positions = <22>; layers = <0>; bindings = <&kp RBKT>; timeout-ms = <TIMEOUT>; };
+        combo_dtap_colon { key-positions = <23>; layers = <0>; bindings = <&kp COLON>; timeout-ms = <TIMEOUT>; };
+        combo_dtap_lthan { key-positions = <24>; layers = <0>; bindings = <&kp LESS_THAN>; timeout-ms = <TIMEOUT>; };
+        combo_dtap_mthan { key-positions = <25>; layers = <0>; bindings = <&kp GREATER_THAN>; timeout-ms = <TIMEOUT>; };
+        combo_dtap_qmark { key-positions = <26>; layers = <0>; bindings = <&kp QMARK>; timeout-ms = <TIMEOUT>; };
     };
 
     keymap {
