@@ -87,45 +87,101 @@
         };
 
         combo_dtap_lbracket {
-            key-positions = <21>;
+            key-positions = <30>;
             layers = <0>;
             bindings = <&kp LBKT>;
             timeout-ms = <TIMEOUT>;
         };
 
         combo_dtap_rbracket {
-            key-positions = <22>;
+            key-positions = <31>;
             layers = <0>;
             bindings = <&kp RBKT>;
             timeout-ms = <TIMEOUT>;
         };
 
         combo_dtap_colon {
-            key-positions = <23>;
+            key-positions = <22>;
             layers = <0>;
             bindings = <&kp COLON>;
             timeout-ms = <TIMEOUT>;
         };
 
         combo_dtap_lthan {
-            key-positions = <24>;
+            key-positions = <32>;
             layers = <0>;
             bindings = <&kp LESS_THAN>;
             timeout-ms = <TIMEOUT>;
         };
 
         combo_dtap_mthan {
-            key-positions = <25>;
+            key-positions = <33>;
             layers = <0>;
             bindings = <&kp GREATER_THAN>;
             timeout-ms = <TIMEOUT>;
         };
 
         combo_dtap_qmark {
-            key-positions = <26>;
+            key-positions = <34>;
             layers = <0>;
             bindings = <&kp QMARK>;
             timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <18>;
+            layers = <0>;
+        };
+
+        combo_dtap_rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <19>;
+        };
+
+        combo_dtap_lbrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <28>;
+        };
+
+        combo_dtap_rbrace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <29>;
+        };
+
+        combo_dtap_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <17>;
+        };
+
+        combo_dtap_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <25>;
+        };
+
+        combo_dtap_dquotes {
+            bindings = <&kp DQT>;
+            key-positions = <20>;
+        };
+
+        combo_dtap_squote {
+            bindings = <&kp SQT>;
+            key-positions = <21>;
+        };
+
+        combo_dtap_opslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <26>;
+        };
+
+        combo_dtap_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <27>;
+        };
+
+        combo_dtap_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <16>;
         };
     };
 
