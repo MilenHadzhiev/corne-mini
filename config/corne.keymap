@@ -8,14 +8,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define TIMEOUT 200
+#define TIMEOUT 100
 
 / {
     behaviors {
-        &lt {
-            tapping-term-ms = <100>;
-        };
-
         // Number row tap-dance behaviors
         td_q: td_q {
             compatible = "zmk,behavior-tap-dance";
