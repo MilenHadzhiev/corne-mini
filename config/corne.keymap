@@ -11,26 +11,122 @@
 #define TIMEOUT 200
 
 / {
-
     combos {
         compatible = "zmk,combos";
+
         // Key Positions for the first row: 1, 2, 3, 4, 5, 7, 8, 9, 10, 11
-        combo_dtap_q { key-positions = <1>;  layers = <0>; bindings = <&kp N1>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_w { key-positions = <2>;  layers = <0>; bindings = <&kp N2>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_e { key-positions = <3>;  layers = <0>; bindings = <&kp N3>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_r { key-positions = <4>;  layers = <0>; bindings = <&kp N4>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_t { key-positions = <5>;  layers = <0>; bindings = <&kp N5>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_y { key-positions = <7>;  layers = <0>; bindings = <&kp N6>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_u { key-positions = <8>;  layers = <0>; bindings = <&kp N7>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_i { key-positions = <9>;  layers = <0>; bindings = <&kp N8>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_o { key-positions = <10>; layers = <0>; bindings = <&kp N9>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_p { key-positions = <11>; layers = <0>; bindings = <&kp N0>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_lbracket { key-positions = <21>; layers = <0>; bindings = <&kp LBKT>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_rbracket { key-positions = <22>; layers = <0>; bindings = <&kp RBKT>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_colon { key-positions = <23>; layers = <0>; bindings = <&kp COLON>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_lthan { key-positions = <24>; layers = <0>; bindings = <&kp LESS_THAN>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_mthan { key-positions = <25>; layers = <0>; bindings = <&kp GREATER_THAN>; timeout-ms = <TIMEOUT>; };
-        combo_dtap_qmark { key-positions = <26>; layers = <0>; bindings = <&kp QMARK>; timeout-ms = <TIMEOUT>; };
+
+        combo_dtap_q {
+            key-positions = <1>;
+            layers = <0>;
+            bindings = <&kp N1>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_w {
+            key-positions = <2>;
+            layers = <0>;
+            bindings = <&kp N2>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_e {
+            key-positions = <3>;
+            layers = <0>;
+            bindings = <&kp N3>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_r {
+            key-positions = <4>;
+            layers = <0>;
+            bindings = <&kp N4>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_t {
+            key-positions = <5>;
+            layers = <0>;
+            bindings = <&kp N5>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_y {
+            key-positions = <6>;
+            layers = <0>;
+            bindings = <&kp N6>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_u {
+            key-positions = <7>;
+            layers = <0>;
+            bindings = <&kp N7>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_i {
+            key-positions = <8>;
+            layers = <0>;
+            bindings = <&kp N8>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_o {
+            key-positions = <9>;
+            layers = <0>;
+            bindings = <&kp N9>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_p {
+            key-positions = <10>;
+            layers = <0>;
+            bindings = <&kp N0>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_lbracket {
+            key-positions = <21>;
+            layers = <0>;
+            bindings = <&kp LBKT>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_rbracket {
+            key-positions = <22>;
+            layers = <0>;
+            bindings = <&kp RBKT>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_colon {
+            key-positions = <23>;
+            layers = <0>;
+            bindings = <&kp COLON>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_lthan {
+            key-positions = <24>;
+            layers = <0>;
+            bindings = <&kp LESS_THAN>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_mthan {
+            key-positions = <25>;
+            layers = <0>;
+            bindings = <&kp GREATER_THAN>;
+            timeout-ms = <TIMEOUT>;
+        };
+
+        combo_dtap_qmark {
+            key-positions = <26>;
+            layers = <0>;
+            bindings = <&kp QMARK>;
+            timeout-ms = <TIMEOUT>;
+        };
     };
 
     keymap {
