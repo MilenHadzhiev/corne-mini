@@ -195,18 +195,18 @@
 
         default_layer {
             bindings = <
-&trans  &mt ESC Q  &kp W       &kp E         &kp R       &kp T        &kp Y    &kp U     &kp I         &kp O    &kp P     &trans
-&trans  &kp A      &mt LGUI S  &mt LSHIFT D  &mt LALT F  &kp G        &kp H    &kp J     &mt RSHIFT K  &kp L    &kp SEMI  &trans
-&trans  &kp Z      &kp X       &kp C         &kp V       &kp B        &kp N    &kp M     &kp COMMA     &kp DOT  &kp FSLH  &trans
-                               &mo 1         &kp LCTRL   &kp SPACE    &kp RET  &kp BSPC  &mo 2
+&trans  &td_q      &td_w      &td_e        &td_r      &td_t       &td_y    &td_u    &td_i        &td_o    &td_p     &trans
+&trans  &mt ESC A  &td_gui_s  &td_shift_d  &td_alt_f  &kp G       &kp H    &kp J    &td_shift_k  &kp L    &td_semi  &trans
+&trans  &kp Z      &kp X      &kp C        &kp V      &kp B       &kp N    &kp M    &td_comma    &td_dot  &td_fslh  &trans
+                          &mo 1        &kp LCTRL  &kp SPACE   &kp RET  &kp BSPC  &mo 2
             >;
         };
 
         lower_layer {
             bindings = <
 &trans  &kp N1     &kp N2         &kp N3     &kp N4        &kp N5            &kp N6            &kp N7             &kp N8    &kp N9             &kp N0   &trans
-&trans  &kp TILDE  &kp LCMD       &kp LSHFT  &kp LEFT_ALT  &kp TAB           &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &kp DOUBLE_QUOTES  &kp SQT  &trans
-&trans  &kp PLUS   &kp BACKSLASH  &kp PIPE   &kp MINUS     &kp UNDERSCORE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS  &trans             &trans   &trans
+&trans  &kp TILDE  &kp LCMD       &kp LSHFT  &kp LEFT_ALT  &kp TAB           &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &td_dquotes        &td_squote  &trans
+&trans  &td_plus   &td_backslash  &td_pipe   &td_minus     &kp UNDERSCORE    &td_lbracket      &td_rbracket       &kp PLUS  &trans             &trans   &trans
                                   &kp LGUI   &kp LCTRL     &kp SPACE         &kp RET           &kp BACKSPACE      &kp RALT
             >;
         };
