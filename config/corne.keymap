@@ -13,175 +13,177 @@
 / {
     behaviors {
         // Number row tap-dance behaviors
+
         td_q: td_q {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp Q>, <&kp N1>;
         };
-        
+
         td_w: td_w {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp W>, <&kp N2>;
         };
-        
+
         td_e: td_e {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp E>, <&kp N3>;
         };
-        
+
         td_r: td_r {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp R>, <&kp N4>;
         };
-        
+
         td_t: td_t {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp T>, <&kp N5>;
         };
-        
+
         td_y: td_y {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp Y>, <&kp N6>;
         };
-        
+
         td_u: td_u {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp U>, <&kp N7>;
         };
-        
+
         td_i: td_i {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp I>, <&kp N8>;
         };
-        
+
         td_o: td_o {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp O>, <&kp N9>;
         };
-        
+
         td_p: td_p {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp P>, <&kp N0>;
         };
-        
+
         // Symbol tap-dance behaviors
+
         td_semi: td_semi {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp SEMI>, <&kp COLON>;
+            bindings = <&kp SEMICOLON>, <&kp SQT>;
         };
-        
+
         td_comma: td_comma {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp COMMA>, <&kp LESS_THAN>;
         };
-        
+
         td_dot: td_dot {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp DOT>, <&kp GREATER_THAN>;
         };
-        
+
         td_fslh: td_fslh {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp FSLH>, <&kp QMARK>;
         };
-        
+
         td_lbracket: td_lbracket {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp LBKT>, <&kp LPAR>;
         };
-        
+
         td_rbracket: td_rbracket {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp RBKT>, <&kp RPAR>;
         };
-        
-        td_lbrace: td_lbrace {
+
+        td_h: td_h {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp LEFT_BRACE>, <&kp LEFT_BRACE>;
+            bindings = <&kp H>, <&kp LEFT_BRACKET>;
         };
-        
-        td_rbrace: td_rbrace {
+
+        td_j: td_j {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp RIGHT_BRACE>, <&kp RIGHT_BRACE>;
+            bindings = <&kp J>, <&kp RIGHT_BRACKET>;
         };
-        
-        td_equal: td_equal {
+
+        td_l: td_l {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp EQUAL>, <&kp PLUS>;
+            bindings = <&kp L>, <&kp EQUAL>;
         };
-        
+
         td_minus: td_minus {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp MINUS>, <&kp UNDERSCORE>;
         };
-        
-        td_dquotes: td_dquotes {
+
+        td_b: td_b {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp DQT>, <&kp SQT>;
+            bindings = <&kp B>, <&kp TILDE>;
         };
-        
+
         td_squote: td_squote {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp SQT>, <&kp DQT>;
         };
-        
+
         td_backslash: td_backslash {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp BACKSLASH>, <&kp PIPE>;
         };
-        
+
         td_pipe: td_pipe {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp PIPE>, <&kp BACKSLASH>;
         };
-        
+
         td_plus: td_plus {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -195,27 +197,27 @@
 
         default_layer {
             bindings = <
-&trans  &td_q           &td_w       &td_e         &td_r       &td_t       &td_y       &td_u     &td_i         &td_o     &td_p       &trans
-&trans  &mt ESC A       &mt LGUI S  &mt LSHIFT D  &mt LALT F  &kp G       &kp H       &kp J     &mt RSHIFT K  &kp L     &td_semi    &trans
-&trans  &kp Z           &kp X       &kp C         &kp V       &kp B       &kp N       &kp M     &td_comma     &td_dot   &td_fslh    &trans
-                                    &mo 1      &kp LCTRL  &kp SPACE       &kp RET    &kp BSPC  &mo 2
+&trans  &td_q      &td_w       &td_e         &td_r       &td_t        &td_y    &td_u     &td_i         &td_o       &td_p      &trans
+&trans  &mt ESC A  &mt LGUI S  &mt LSHIFT D  &mt LALT F  &mt TAB G    &td_h    &td_j     &mt RSHIFT K  &td_l       &td_semi   &trans
+&trans  &kp Z      &kp X       &kp C         &kp V       &td_b        &kp N    &kp M     &kp COMMA     &kp PERIOD  &kp SLASH  &trans
+                               &mo 1         &kp LCTRL   &kp SPACE    &kp RET  &kp BSPC  &mo 2
             >;
         };
 
         lower_layer {
             bindings = <
-&trans  &kp N1     &kp N2         &kp N3     &kp N4        &kp N5            &kp N6            &kp N7             &kp N8    &kp N9             &kp N0   &trans
-&trans  &kp TILDE  &kp LCMD       &kp LSHFT  &kp LEFT_ALT  &kp TAB           &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &td_dquotes        &td_squote  &trans
-&trans  &td_plus   &td_backslash  &td_pipe   &td_minus     &kp UNDERSCORE    &td_lbracket      &td_rbracket       &kp PLUS  &trans             &trans   &trans
-                                  &kp LGUI   &kp LCTRL     &kp SPACE         &kp RET           &kp BACKSPACE      &kp RALT
+&trans  &kp N1      &kp N2         &kp N3     &kp N4        &kp N5       &kp N6            &kp N7         &kp N8     &kp N9      &kp N0         &trans
+&trans  &kp ESCAPE  &kp LCMD       &kp LSHFT  &kp LEFT_ALT  &kp TAB      &kp LEFT_BRACKET  &kp UP_ARROW   &kp RSHFT  &kp EQUAL   &kp SEMICOLON  &trans
+&trans  &td_plus    &td_backslash  &td_pipe   &td_minus     &kp TILDE    &kp LEFT          &kp DOWN       &kp RIGHT  &kp PERIOD  &kp SLASH      &trans
+                                   &trans     &kp LCTRL     &kp SPACE    &kp RET           &kp BACKSPACE  &kp RALT
             >;
         };
 
         raise_layer {
             bindings = <
-&trans  &kp F1        &kp F2         &kp F3        &kp F4        &kp F5          &kp F6      &kp F7         &kp F8    &kp F9     &kp F10  &trans
-&trans  &bt BT_CLR    &kp LEFT_META  &kp LSHIFT    &kp LALT      &trans          &kp F11     &kp F12        &kp UP    &trans     &trans   &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp DELETE  &kp LEFT       &kp DOWN  &kp RIGHT  &trans   &trans
+&trans  &kp F1        &kp F2         &kp F3        &kp F4        &kp F5          &kp F6      &kp F7         &kp F8      &kp F9  &kp F10  &trans
+&trans  &bt BT_CLR    &kp LEFT_META  &kp LSHIFT    &kp LALT      &trans          &kp F11     &kp F12        &kp DELETE  &trans  &trans   &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp INSERT  &trans         &trans      &trans  &trans   &trans
                                      &kp LGUI      &kp LCTRL     &kp SPACE       &kp RET     &kp BACKSPACE  &kp RALT
             >;
         };
