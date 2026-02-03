@@ -93,11 +93,11 @@
             bindings = <&kp SEMICOLON>, <&kp SQT>;
         };
 
-        td_comma: td_comma {
+        td_v: td_v {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp COMMA>, <&kp LESS_THAN>;
+            bindings = <&kp V>, <&kp NON_US_BACKSLASH>;
         };
 
         td_dot: td_dot {
@@ -199,7 +199,7 @@
             bindings = <
 &trans  &td_q      &td_w       &td_e         &td_r       &td_t        &td_y    &td_u     &td_i         &td_o       &td_p      &trans
 &trans  &mt ESC A  &mt LGUI S  &mt LSHIFT D  &mt LALT F  &mt TAB G    &td_h    &td_j     &mt RSHIFT K  &td_l       &td_semi   &trans
-&trans  &kp Z      &kp X       &kp C         &kp V       &td_b        &td_n    &kp M     &kp COMMA     &kp PERIOD  &kp SLASH  &trans
+&trans  &kp Z      &kp X       &kp C         &td_v       &td_b        &td_n    &kp M     &kp COMMA     &kp PERIOD  &kp SLASH  &trans
                                &mo 1         &kp LCTRL   &kp SPACE    &kp RET  &kp BSPC  &mo 2
             >;
         };
