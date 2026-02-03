@@ -107,11 +107,11 @@
             bindings = <&kp DOT>, <&kp GREATER_THAN>;
         };
 
-        td_fslh: td_fslh {
+        td_n: td_n {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp FSLH>, <&kp QMARK>;
+            bindings = <&kp N>, <&kp MINUS>;
         };
 
         td_lbracket: td_lbracket {
