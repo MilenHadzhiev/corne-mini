@@ -100,32 +100,11 @@
             bindings = <&kp V>, <&kp NON_US_BACKSLASH>;
         };
 
-        td_dot: td_dot {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp DOT>, <&kp GREATER_THAN>;
-        };
-
         td_n: td_n {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp N>, <&kp MINUS>;
-        };
-
-        td_lbracket: td_lbracket {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp LBKT>, <&kp LPAR>;
-        };
-
-        td_rbracket: td_rbracket {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp RBKT>, <&kp RPAR>;
         };
 
         td_h: td_h {
@@ -160,14 +139,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp B>, <&kp TILDE>;
-        };
-
-        td_squote: td_squote {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp SQT>, <&kp DQT>;
+            bindings = <&kp B>, <&kp GRAVE>;
         };
 
         td_backslash: td_backslash {
@@ -208,7 +180,7 @@
             bindings = <
 &trans  &kp N1      &kp N2         &kp N3     &kp N4        &kp N5       &kp N6            &kp N7         &kp N8     &kp N9      &kp N0         &trans
 &trans  &kp ESCAPE  &kp LCMD       &kp LSHFT  &kp LEFT_ALT  &kp TAB      &kp LEFT_BRACKET  &kp UP_ARROW   &kp RSHFT  &kp EQUAL   &kp SEMICOLON  &trans
-&trans  &td_plus    &td_backslash  &td_pipe   &td_minus     &kp TILDE    &kp LEFT          &kp DOWN       &kp RIGHT  &kp PERIOD  &kp SLASH      &trans
+&trans  &td_plus    &td_backslash  &td_pipe   &td_minus     &kp GRAVE    &kp LEFT          &kp DOWN       &kp RIGHT  &kp PERIOD  &kp SLASH      &trans
                                    &trans     &kp LCTRL     &kp SPACE    &kp RET           &kp BACKSPACE  &kp RALT
             >;
         };
