@@ -94,39 +94,18 @@
             bindings = <&kp SEMICOLON>, <&kp SQT>;
         };
 
-        td_comma: td_comma {
+        td_v: td_v {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp COMMA>, <&kp LESS_THAN>;
+            bindings = <&kp V>, <&kp NON_US_BACKSLASH>;
         };
 
-        td_dot: td_dot {
+        td_n: td_n {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp DOT>, <&kp GREATER_THAN>;
-        };
-
-        td_fslh: td_fslh {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp FSLH>, <&kp QMARK>;
-        };
-
-        td_lbracket: td_lbracket {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp LBKT>, <&kp LPAR>;
-        };
-
-        td_rbracket: td_rbracket {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp RBKT>, <&kp RPAR>;
+            bindings = <&kp N>, <&kp MINUS>;
         };
 
         td_h: td_h {
@@ -161,14 +140,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp B>, <&kp TILDE>;
-        };
-
-        td_squote: td_squote {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp SQT>, <&kp DQT>;
+            bindings = <&kp B>, <&kp GRAVE>;
         };
 
         td_backslash: td_backslash {
@@ -208,8 +180,8 @@
         default_layer {
             bindings = <
 &trans  &td_q      &td_w       &td_e         &td_r       &td_t        &td_y    &td_u     &td_i         &td_o       &td_p      &trans
-&trans  &a_esc ESC A  &mt LGUI S  &mt LSHIFT D  &mt LALT F  &mt TAB G    &td_h    &td_j     &mt RSHIFT K  &td_l       &td_semi   &trans
-&trans  &kp Z      &kp X       &kp C         &kp V       &td_b        &kp N    &kp M     &kp COMMA     &kp PERIOD  &kp SLASH  &trans
+&trans  &mt ESC A  &mt LGUI S  &mt LSHIFT D  &mt LALT F  &mt TAB G    &td_h    &td_j     &mt RSHIFT K  &td_l       &td_semi   &trans
+&trans  &kp Z      &kp X       &kp C         &td_v       &td_b        &td_n    &kp M     &kp COMMA     &kp PERIOD  &kp SLASH  &trans
                                &mo 1         &kp LCTRL   &kp SPACE    &kp RET  &kp BSPC  &mo 2
             >;
         };
@@ -218,7 +190,7 @@
             bindings = <
 &trans  &kp N1      &kp N2         &kp N3     &kp N4        &kp N5       &kp N6            &kp N7         &kp N8     &kp N9      &kp N0         &trans
 &trans  &kp ESCAPE  &kp LCMD       &kp LSHFT  &kp LEFT_ALT  &kp TAB      &kp LEFT_BRACKET  &kp UP_ARROW   &kp RSHFT  &kp EQUAL   &kp SEMICOLON  &trans
-&trans  &td_plus    &td_backslash  &td_pipe   &td_minus     &kp TILDE    &kp LEFT          &kp DOWN       &kp RIGHT  &kp PERIOD  &kp SLASH      &trans
+&trans  &td_plus    &td_backslash  &td_pipe   &td_minus     &kp GRAVE    &kp LEFT          &kp DOWN       &kp RIGHT  &kp PERIOD  &kp SLASH      &trans
                                    &trans     &kp LCTRL     &kp SPACE    &kp RET           &kp BACKSPACE  &kp RALT
             >;
         };
