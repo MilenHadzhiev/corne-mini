@@ -197,7 +197,7 @@
             #binding-cells = <2>;
 	    flavor = "balanced";
 	    tapping-term-ms = <TIMEOUT>;
-	    required-prior-idle-ms = <IDLE_TIMEOUT>;
+	    require-prior-idle-ms = <IDLE_TIMEOUT>;
             bindings = <&kp>, <&kp>;
 	};
     };
