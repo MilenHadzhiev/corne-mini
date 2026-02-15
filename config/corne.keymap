@@ -197,7 +197,7 @@
             #binding-cells = <0>;
 	    flavor = "balanced";
 	    tapping-term-ms = <TIMEOUT>;
-	    required-prior-idle-ms = <IDLE-TIMEOUT>;
+	    required-prior-idle-ms = <IDLE_TIMEOUT>;
 	};
     };
 
