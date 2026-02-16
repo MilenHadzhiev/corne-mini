@@ -209,7 +209,7 @@
             bindings = <
 &trans  &td_q      &td_w       &td_e         &td_r       &td_t        &td_y    &td_u     &td_i         &td_o                  &td_p      &trans
 &trans  &ht ESC A  &ht LGUI S  &ht LSHIFT D  &ht LALT F  &ht TAB G    &td_h    &td_j     &ht RSHIFT K  &td_l                  &td_semi   &trans
-&trans  &kp Z      &kp X       &kp C         &kp V       &td_b        &td_n    &kp M     &kp COMMA     &ht PERIOD RIGHT_META  &kp SLASH  &trans
+&trans  &kp Z      &kp X       &kp C         &kp V       &td_b        &td_n    &kp M     &kp COMMA     &ht RIGHT_META PERIOD  &kp SLASH  &trans
                                &mo 1         &kp LCTRL   &kp SPACE    &kp RET  &kp BSPC  &mo 2
             >;
         };
