@@ -8,8 +8,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define TIMEOUT 200
-#define IDLE_TIMEOUT 100
+#define TIMEOUT 180
+#define IDLE_TIMEOUT 150
 
 / {
     behaviors {
@@ -94,11 +94,11 @@
             bindings = <&kp SEMICOLON>, <&kp SQT>;
         };
 
-        td_comma: td_comma {
+        td_n: td_n {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp COMMA>, <&kp LESS_THAN>;
+            bindings = <&kp N>, <&kp MINUS>;
         };
 
         td_dot: td_dot {
@@ -192,14 +192,14 @@
             bindings = <&kp PLUS>, <&kp EQUAL>;
         };
 
-	ht: ht_behavior {
-	    compatible = "zmk,behavior-hold-tap";
+        ht: ht_behavior {
+            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-	    flavor = "balanced";
-	    tapping-term-ms = <TIMEOUT>;
-	    require-prior-idle-ms = <IDLE_TIMEOUT>;
+            flavor = "balanced";
+            tapping-term-ms = <TIMEOUT>;
+            require-prior-idle-ms = <IDLE_TIMEOUT>;
             bindings = <&kp>, <&kp>;
-	};
+        };
     };
 
     keymap {
@@ -207,9 +207,9 @@
 
         default_layer {
             bindings = <
-&trans  &td_q      &td_w       &td_e         &td_r       &td_t        &td_y    &td_u     &td_i         &td_o       &td_p      &trans
-&trans  &mt ESC A  &mt LGUI S  &mt LSHIFT D  &mt LALT F  &mt TAB G    &td_h    &td_j     &mt RSHIFT K  &td_l       &td_semi   &trans
-&trans  &kp Z      &kp X       &kp C         &kp V       &td_b        &kp N    &kp M     &kp COMMA     &kp PERIOD  &kp SLASH  &trans
+&trans  &td_q      &td_w       &td_e         &td_r       &td_t        &td_y    &td_u     &td_i         &td_o                  &td_p      &trans
+&trans  &ht ESC A  &ht LGUI S  &ht LSHIFT D  &ht LALT F  &ht TAB G    &td_h    &td_j     &ht RSHIFT K  &td_l                  &td_semi   &trans
+&trans  &kp Z      &kp X       &kp C         &kp V       &td_b        &td_n    &kp M     &kp COMMA     &ht RIGHT_META PERIOD  &kp SLASH  &trans
                                &mo 1         &kp LCTRL   &kp SPACE    &kp RET  &kp BSPC  &mo 2
             >;
         };
@@ -218,16 +218,16 @@
             bindings = <
 &trans  &kp N1      &kp N2         &kp N3     &kp N4        &kp N5       &kp N6            &kp N7         &kp N8     &kp N9      &kp N0         &trans
 &trans  &kp ESCAPE  &kp LCMD       &kp LSHFT  &kp LEFT_ALT  &kp TAB      &kp LEFT_BRACKET  &kp UP_ARROW   &kp RSHFT  &kp EQUAL   &kp SEMICOLON  &trans
-&trans  &td_plus    &td_backslash  &td_pipe   &td_minus     &kp TILDE    &kp LEFT          &kp DOWN       &kp RIGHT  &kp PERIOD  &kp SLASH      &trans
+&trans  &td_plus    &td_backslash  &td_pipe   &td_minus     &kp GRAVE    &kp LEFT          &kp DOWN       &kp RIGHT  &kp PERIOD  &kp SLASH      &trans
                                    &trans     &kp LCTRL     &kp SPACE    &kp RET           &kp BACKSPACE  &kp RALT
             >;
         };
 
         raise_layer {
             bindings = <
-&trans  &kp F1        &kp F2         &kp F3        &kp F4        &kp F5          &kp F6      &kp F7         &kp F8      &kp F9  &kp F10  &trans
-&trans  &bt BT_CLR    &kp LEFT_META  &kp LSHIFT    &kp LALT      &trans          &kp F11     &kp F12        &kp DELETE  &trans  &trans   &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp INSERT  &trans         &trans      &trans  &trans   &trans
+&trans  &kp F1        &kp F2         &kp F3        &kp F4        &kp F5          &kp F6      &kp F7         &kp F8      &kp F9      &kp F10  &trans
+&trans  &bt BT_CLR    &kp LEFT_META  &kp LSHIFT    &kp LALT      &trans          &kp F11     &kp F12        &kp DELETE  &trans      &trans   &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp INSERT  &kp CLCK       &kp COMMA   &kp PERIOD  &trans   &trans
                                      &kp LGUI      &kp LCTRL     &kp SPACE       &kp RET     &kp BACKSPACE  &kp RALT
             >;
         };
