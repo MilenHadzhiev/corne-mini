@@ -11,7 +11,7 @@
 
 	&mt {
 	    tapping-term-ms = <IDLE_TIMEOUT>;
-	}
+	};
 
         td_q: td_q {
             compatible = "zmk,behavior-tap-dance";
