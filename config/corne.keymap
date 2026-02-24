@@ -2,15 +2,15 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define TIMEOUT 180
-#define IDLE_TIMEOUT 150
+#define TIMEOUT 170
+#define IDLE_TIMEOUT 130
 
 / {
     behaviors {
         // Number row tap-dance behaviors
 
 	&mt {
-	    tapping-term-ms = <150>;
+	    tapping-term-ms = <IDLE_TIMEOUT>;
 	}
 
         td_q: td_q {
