@@ -95,34 +95,6 @@
             bindings = <&kp N>, <&kp MINUS>;
         };
 
-        td_dot: td_dot {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp DOT>, <&kp GREATER_THAN>;
-        };
-
-        td_fslh: td_fslh {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp FSLH>, <&kp QMARK>;
-        };
-
-        td_lbracket: td_lbracket {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp LBKT>, <&kp LPAR>;
-        };
-
-        td_rbracket: td_rbracket {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp RBKT>, <&kp RPAR>;
-        };
-
         td_h: td_h {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -156,13 +128,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp B>, <&kp TILDE>;
-        };
-
-        td_squote: td_squote {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <TIMEOUT>;
-            bindings = <&kp SQT>, <&kp DQT>;
         };
 
         td_backslash: td_backslash {
