@@ -9,7 +9,7 @@
     behaviors {
         // Number row tap-dance behaviors
 
-	&mt {
+	mt: mod_tap {
 	    tapping-term-ms = <IDLE_TIMEOUT>;
 	};
 
