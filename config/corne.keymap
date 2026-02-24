@@ -9,6 +9,10 @@
     behaviors {
         // Number row tap-dance behaviors
 
+	&mt {
+	    tapping-term-ms = <150>;
+	}
+
         td_q: td_q {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
