@@ -22,4 +22,5 @@
                            &mo 1         &kp LCTRL   &kp SPACE    &kp RET  &kp BSPC         &mo 2
             >;
         };
+    };
 };
