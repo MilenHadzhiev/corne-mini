@@ -78,78 +78,6 @@
             tapping-term-ms = <TIMEOUT>;
             bindings = <&kp P>, <&kp N0>;
         };
-
-        // Symbol tap-dance behaviors
-
-        //td_semi: td_semi {
-        //    compatible = "zmk,behavior-tap-dance";
-        //    #binding-cells = <0>;
-        //    tapping-term-ms = <TIMEOUT>;
-        //    bindings = <&kp SEMICOLON>, <&kp SQT>;
-        //};
-
-        //td_n: td_n {
-        //    compatible = "zmk,behavior-tap-dance";
-        //    #binding-cells = <0>;
-        //    tapping-term-ms = <TIMEOUT>;
-        //    bindings = <&kp N>, <&kp MINUS>;
-        //};
-
-        //td_h: td_h {
-        //    compatible = "zmk,behavior-tap-dance";
-        //    #binding-cells = <0>;
-        //    tapping-term-ms = <TIMEOUT>;
-        //    bindings = <&kp H>, <&kp LEFT_BRACKET>;
-        //};
-
-        //td_j: td_j {
-        //    compatible = "zmk,behavior-tap-dance";
-        //    #binding-cells = <0>;
-        //    tapping-term-ms = <TIMEOUT>;
-        //    bindings = <&kp J>, <&kp RIGHT_BRACKET>;
-        //};
-
-        //td_l: td_l {
-        //    compatible = "zmk,behavior-tap-dance";
-        //    #binding-cells = <0>;
-        //    tapping-term-ms = <TIMEOUT>;
-        //    bindings = <&kp L>, <&kp EQUAL>;
-        //};
-
-        //td_minus: td_minus {
-        //    compatible = "zmk,behavior-tap-dance";
-        //    #binding-cells = <0>;
-        //    tapping-term-ms = <TIMEOUT>;
-        //    bindings = <&kp MINUS>, <&kp UNDERSCORE>;
-        //};
-
-        //td_b: td_b {
-        //    compatible = "zmk,behavior-tap-dance";
-        //    #binding-cells = <0>;
-        //    tapping-term-ms = <TIMEOUT>;
-        //    bindings = <&kp B>, <&kp TILDE>;
-        //};
-
-        //td_backslash: td_backslash {
-        //    compatible = "zmk,behavior-tap-dance";
-        //    #binding-cells = <0>;
-        //    tapping-term-ms = <TIMEOUT>;
-        //    bindings = <&kp BACKSLASH>, <&kp PIPE>;
-        //};
-
-        //td_pipe: td_pipe {
-        //    compatible = "zmk,behavior-tap-dance";
-        //    #binding-cells = <0>;
-        //    tapping-term-ms = <TIMEOUT>;
-        //    bindings = <&kp PIPE>, <&kp BACKSLASH>;
-        //};
-
-        //td_plus: td_plus {
-        //    compatible = "zmk,behavior-tap-dance";
-        //    #binding-cells = <0>;
-        //    tapping-term-ms = <TIMEOUT>;
-        //    bindings = <&kp PLUS>, <&kp EQUAL>;
-        };
     };
 
     keymap {
@@ -159,7 +87,7 @@
             bindings = <
 &trans  &td_q      &td_w       &td_e         &td_r       &td_t        &td_y    &td_u     &td_i         &td_o       &td_p      &trans
 &trans  &mt ESC A  &mt LGUI S  &mt LSHIFT D  &mt LALT F  &mt TAB G    &kp H    &kp J     &mt RSHIFT K  &kp L       &kp SEMI   &trans
-&trans  &kp Z      &kp X       &kp C         &kp V       &kp B        &kp N    &kp M     &kp COMMA     &mt PERIOD  &kp SLASH  &trans
+&trans  &kp Z      &kp X       &kp C         &kp V       &kp B        &kp N    &kp M     &kp COMMA     &kp PERIOD  &kp SLASH  &trans
                                &mo 1         &kp LCTRL   &kp SPACE    &kp RET  &kp BSPC  &mo 2
             >;
         };
