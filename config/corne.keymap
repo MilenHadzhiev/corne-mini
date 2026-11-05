@@ -7,6 +7,15 @@
 
 / {
     behaviors {
+	hm: homerow_mods {
+		compatible = "zmk,behavior-hold-tap";
+		#binding-cells = <2>;
+		tapping-term-ms = <250>;
+		quick-tap-ms = <150>;
+		require-prior-idle-ms = <150>;
+		flavor = "balanced";
+		bindings = <&kp>, <&kp>;
+	};
         // Number row tap-dance behaviors
 
         td_q: td_q {
@@ -158,8 +167,8 @@
         default_layer {
             bindings = <
 &trans  &td_q      &td_w       &td_e         &td_r       &td_t        &td_y    &td_u     &td_i         &td_o                  &td_p      &trans
-&trans  &mt ESC A  &mt LGUI S  &mt LSHIFT D  &mt LALT F  &mt TAB G    &td_h    &td_j     &mt RSHIFT K  &td_l                  &td_semi   &trans
-&trans  &kp Z      &kp X       &kp C         &kp V       &td_b        &td_n    &kp M     &kp COMMA     &mt RIGHT_META PERIOD  &kp SLASH  &trans
+&trans  &hm ESC A  &hm LGUI S  &hm LSHIFT D  &hm LALT F  &mt TAB G    &td_h    &td_j     &hm RSHIFT K  &td_l                  &td_semi   &trans
+&trans  &kp Z      &kp X       &kp C         &kp V       &td_b        &td_n    &kp M     &kp COMMA     &hm RIGHT_META PERIOD  &kp SLASH  &trans
                                &mo 1         &kp LCTRL   &kp SPACE    &kp RET  &kp BSPC  &mo 2
             >;
         };
